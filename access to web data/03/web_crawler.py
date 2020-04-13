@@ -13,4 +13,7 @@ soup = BeautifulSoup(html, "html.parser")
 tags = soup("a")
 
 for tag in tags :
-    print(tag.get("href", None))
+    #print(tag.get("href", None))
+    subc = soup.find_all('span')
+    subc1 = subc[1]
+    #print(subc1)
